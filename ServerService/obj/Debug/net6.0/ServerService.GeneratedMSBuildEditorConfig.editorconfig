@@ -1,0 +1,225 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ServerService
+build_property.RootNamespace = ServerService
+build_property.ProjectDir = D:\Onedrive\Desktop\Thiet ke phan mem\Assigment\Project\21880263\ServerService\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Onedrive\Desktop\Thiet ke phan mem\Assigment\Project\21880263\ServerService
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/DatXes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0WGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/DatXes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0WGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/DatXes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0WGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/DatXes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0WGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/DatXes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0WGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/KhachHangs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/KhachHangs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/KhachHangs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/KhachHangs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/KhachHangs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/LoaiXes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVhlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/LoaiXes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVhlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/LoaiXes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVhlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/LoaiXes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVhlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/LoaiXes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVhlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Notifications/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Notifications/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Notifications/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Notifications/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Notifications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TaiXes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpWGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TaiXes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpWGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TaiXes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpWGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TaiXes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpWGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TaiXes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpWGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiDatXes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpRGF0WGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiDatXes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpRGF0WGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiDatXes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpRGF0WGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiDatXes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpRGF0WGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiDatXes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpRGF0WGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiTaiXes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpVGFpWGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiTaiXes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpVGFpWGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiTaiXes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpVGFpWGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiTaiXes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpVGFpWGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/TrangThaiTaiXes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbmdUaGFpVGFpWGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Xes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Xes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Xes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Xes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Xes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Onedrive/Desktop/Thiet ke phan mem/Assigment/Project/21880263/ServerService/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ntz4gjf7xe

@@ -1,0 +1,57 @@
+﻿@model ServerService.Models.TaiXe
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>TaiXe</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TxId" />
+            <div class="form-group">
+                <label asp-for="TxGiayPhepLaiXe" class="control-label"></label>
+                <input asp-for="TxGiayPhepLaiXe" class="form-control" />
+                <span asp-validation-for="TxGiayPhepLaiXe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TxKhamSucKhoe" class="control-label"></label>
+                <input asp-for="TxKhamSucKhoe" class="form-control" />
+                <span asp-validation-for="TxKhamSucKhoe" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TxCccd" class="control-label"></label>
+                <input asp-for="TxCccd" class="form-control" />
+                <span asp-validation-for="TxCccd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtId" class="control-label"></label>
+                <select asp-for="TtId" class="form-control" asp-items="ViewBag.TtId"></select>
+                <span asp-validation-for="TtId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TxGpsLon" class="control-label"></label>
+                <input asp-for="TxGpsLon" class="form-control" />
+                <span asp-validation-for="TxGpsLon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TxGpsLat" class="control-label"></label>
+                <input asp-for="TxGpsLat" class="form-control" />
+                <span asp-validation-for="TxGpsLat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

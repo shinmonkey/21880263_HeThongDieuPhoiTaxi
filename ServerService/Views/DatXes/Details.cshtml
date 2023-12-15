@@ -1,0 +1,85 @@
+﻿@model ServerService.Models.DatXe
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>DatXe</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DxNgayGio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DxNgayGio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DxDiadiemdon)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DxDiadiemdon)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DxGpsLon)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DxGpsLon)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DxGpsLat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DxGpsLat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KhTen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KhTen)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KhPhone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KhPhone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kh.KhId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lx)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lx.LxId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ttdx)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ttdx.TtdxId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tx)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tx.TxId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Xe)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Xe.XeId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.DxId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

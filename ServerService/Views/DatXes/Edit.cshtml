@@ -1,0 +1,82 @@
+﻿@model ServerService.Models.DatXe
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>DatXe</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DxId" />
+            <div class="form-group">
+                <label asp-for="DxNgayGio" class="control-label"></label>
+                <input asp-for="DxNgayGio" class="form-control" />
+                <span asp-validation-for="DxNgayGio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DxDiadiemdon" class="control-label"></label>
+                <input asp-for="DxDiadiemdon" class="form-control" />
+                <span asp-validation-for="DxDiadiemdon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DxGpsLon" class="control-label"></label>
+                <input asp-for="DxGpsLon" class="form-control" />
+                <span asp-validation-for="DxGpsLon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DxGpsLat" class="control-label"></label>
+                <input asp-for="DxGpsLat" class="form-control" />
+                <span asp-validation-for="DxGpsLat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KhTen" class="control-label"></label>
+                <input asp-for="KhTen" class="form-control" />
+                <span asp-validation-for="KhTen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KhPhone" class="control-label"></label>
+                <input asp-for="KhPhone" class="form-control" />
+                <span asp-validation-for="KhPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KhId" class="control-label"></label>
+                <select asp-for="KhId" class="form-control" asp-items="ViewBag.KhId"></select>
+                <span asp-validation-for="KhId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TxId" class="control-label"></label>
+                <select asp-for="TxId" class="form-control" asp-items="ViewBag.TxId"></select>
+                <span asp-validation-for="TxId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="XeId" class="control-label"></label>
+                <select asp-for="XeId" class="form-control" asp-items="ViewBag.XeId"></select>
+                <span asp-validation-for="XeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LxId" class="control-label"></label>
+                <select asp-for="LxId" class="form-control" asp-items="ViewBag.LxId"></select>
+                <span asp-validation-for="LxId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtdxId" class="control-label"></label>
+                <select asp-for="TtdxId" class="form-control" asp-items="ViewBag.TtdxId"></select>
+                <span asp-validation-for="TtdxId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

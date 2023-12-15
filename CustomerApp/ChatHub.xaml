@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomerApp.ChatHub">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="30, 50"
+        VerticalOptions="FillAndExpand">
+        <ScrollView >
+            <Label
+                x:Name="lblChat"
+                FontSize="14"
+                HorizontalOptions="StartAndExpand"
+                TextType="Html"/>
+        </ScrollView>
+        <Button
+            Grid.Row="3"
+            x:Name="btnSend"
+            Text="Huỷ Đặt xe"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="EndAndExpand"
+            Clicked="btnSend_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

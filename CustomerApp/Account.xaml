@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:material="clr-namespace:MauiIcons.Material;assembly=MauiIcons.Material"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomerApp.Account"
+             Title="Tài khoản">
+    <VerticalStackLayout>
+        <Frame CornerRadius="50"
+               BorderColor="Grey"
+                Margin="10"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="100"
+                WidthRequest="100">
+            <material:MauiIcon Icon="SupervisorAccount" IconSize="100" 
+                               HorizontalOptions="Start"
+                               VerticalOptions="Start"
+                               Padding="-20,-20"/>
+        </Frame>
+        <Label 
+            x:Name="txtTenTaiKhoan"
+            Text="Tên Tài khoản"
+            Margin="10, 5"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label 
+            Text="Ngày sinh:"
+            Margin="10, 10"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Label 
+            x:Name="txtPhone"
+            Text="Điện Thoại: "
+            Margin="10, 10"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Label 
+            Text="CCCD:"
+            Margin="10, 10"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <Button Text="Cập nhật thông tin"
+                Margin="10, 10"
+                VerticalOptions="EndAndExpand"/>
+
+        <Button Text="Đăng Xuất"
+                Margin="10, 10"
+                VerticalOptions="EndAndExpand"
+                Clicked="SignOut_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

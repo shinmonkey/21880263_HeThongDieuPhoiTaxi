@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomerApp.SignIn"
+             Title="SignIn">
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="30,0"
+            Spacing="10"
+            VerticalOptions="Center">
+            <Label 
+                Text="CardHub"
+                FontSize="60"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+            <Label 
+                Text="Số điện thoại"/>
+
+            <Entry 
+                x:Name="txtUsername"
+                VerticalOptions="Center"/>
+
+            <Label 
+                Text="Mật khẩu"
+                Margin="5"/>
+
+            <Entry 
+                x:Name="txtPassword" 
+                IsPassword="True"
+                VerticalOptions="Center"/>
+
+            <HorizontalStackLayout 
+                Spacing="10"
+                Padding="30"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+                <Button
+                    VerticalOptions="Center"
+                    x:Name="SignUpBtn"
+                    Text="Đăng Ký"
+                    SemanticProperties.Hint="Sign Up"
+                    Clicked="SignUp_Clicked"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    VerticalOptions="Center"
+                    x:Name="SignInBtn"
+                    Text="Đăng Nhập"
+                    SemanticProperties.Hint="Sign In"
+                    Clicked="SignInClicked"
+                    HorizontalOptions="Center" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

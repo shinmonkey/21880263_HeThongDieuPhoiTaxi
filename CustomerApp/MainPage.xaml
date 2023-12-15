@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material="clr-namespace:MauiIcons.Material;assembly=MauiIcons.Material"
+             xmlns:maps="http://schemas.microsoft.com/dotnet/2021/maui/maps"
+             x:Class="CustomerApp.MainPage">
+    <ScrollView>
+        <Grid RowDefinitions="50,50,*,100">
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="txtaddress" 
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"/>
+                
+                <ImageButton x:Name="geocodinghBtn"
+                             Clicked="geocodinghBtn_Clicked"
+                             VerticalOptions="Center"
+                             Padding="10"
+                             Source="{material:Icon Icon=Send}" 
+                             BorderColor="Grey"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Grid.Row="1">
+                <Label Text="Loại xe: "
+                       VerticalOptions="Center"/>
+                <Picker x:Name="kindCar">
+                    <Picker.Items>
+                        <x:String>4 chỗ</x:String>
+                        <x:String>7 chỗ</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <Map x:Name="map" 
+                      Grid.Row="2"/>
+            <Button Grid.Row="3"
+                    Margin="50, 0"
+                    x:Name="OrderBtn"
+                    Text="Đặt Xe"
+                    Clicked="OrderBtn_Clicked"
+                    VerticalOptions="Center"/>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

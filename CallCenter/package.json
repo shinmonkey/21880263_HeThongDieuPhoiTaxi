@@ -1,0 +1,20 @@
+{
+  "name": "CallCenter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ol": "8.1.0"
+  },
+  "devDependencies": {
+    "vite": "^3.2.3",
+    "typescript": "latest"
+  },
+
+}

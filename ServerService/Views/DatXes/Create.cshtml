@@ -1,0 +1,204 @@
+﻿@model ServerService.Models.DatXe
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<hr />
+<head>
+    <meta charset="UTF-8">
+    <title>Bing Maps</title>
+    <script type='text/javascript'>
+        function loadMapScenario() {
+            var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                showSearchBar: true,
+                zoom: 15
+            });
+            var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), { color: 'red' });
+            map.entities.push(pushpin);
+            var address = document.getElementById("address").value;
+            Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
+                var searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                var requestOptions = {
+                    bounds: map.getBounds(),
+                    where: address,
+                    callback: function (answer, userData) {
+                        map.setView({ bounds: answer.results[0].bestView });
+                        map.entities.push(new Microsoft.Maps.Pushpin(answer.results[0].location));
+                        document.getElementById("latitude").value = answer.results[0].location.latitude
+                        document.getElementById("longitude").value = answer.results[0].location.longitude;
+                    }
+                };
+                searchManager.geocode(requestOptions);
+            });
+        }
+    </script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Au-DVolT8rjOmJOlFmxYl4pLQTL00UgPwWHOAj53tq3cXLQS3mo2WS9XdI4pVly-&callback=loadMapScenario' async defer></script>
+</head>
+<body>
+    <h1 class="text-center">Đặt Xe</h1>
+    <div class="row m-2">
+@*             <div class="col-md-4">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="DxNgayGio" class="control-label"></label>
+                        <input asp-for="DxNgayGio" class="form-control" />
+                        <span asp-validation-for="DxNgayGio" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DxDiadiemdon" class="control-label"></label>
+                        <input asp-for="DxDiadiemdon" class="form-control" id="address" />
+                        <span asp-validation-for="DxDiadiemdon" class="text-danger"></span>
+                        <input type="button" value="Search" class=" btn-primary rounded-2 border-0 p-2" id="geocode" placeholder="Enter the address" onclick="loadMapScenario()" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DxGpsLon" class="control-label" ></label>
+                        <input asp-for="DxGpsLon" class="form-control" id="lon" />
+                        <span asp-validation-for="DxGpsLon" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DxGpsLat" class="control-label"></label>
+                        <input asp-for="DxGpsLat" class="form-control" id="lat" />
+                        <span asp-validation-for="DxGpsLat" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KhTen" class="control-label"></label>
+                        <input asp-for="KhTen" class="form-control" />
+                        <span asp-validation-for="KhTen" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="KhPhone" class="control-label"></label>
+                        <input asp-for="KhPhone" class="form-control" />
+                        <span asp-validation-for="KhPhone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LxId" class="control-label"></label>
+                        <select asp-for="LxId" class="form-control" asp-items="ViewBag.LxId"></select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+        </div> *@
+        <div class="col-6">
+            <form method="post" asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="DxNgayGio" class="control-label"></label>
+                    <input asp-for="DxNgayGio" class="form-control" id="datetime" />
+                    <span asp-validation-for="DxNgayGio" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="KhTen" class="control-label"></label>
+                    <input asp-for="KhTen" class="form-control" id="KhTen" />
+                    <span asp-validation-for="KhTen" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="KhPhone" class="control-label"></label>
+                    <input asp-for="KhPhone" class="form-control" id="KhPhone" />
+                    <span asp-validation-for="KhPhone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LxId" class="control-label"></label>
+                    <select asp-for="LxId" class="form-control" asp-items="ViewBag.LxId" id="Lxid"></select>
+                </div>
+                <label for="address">Địa chỉ: </label>
+                    <div class="row">
+                        <div class="col-10">
+                            <input asp-for="DxDiadiemdon" class="form-control" id="address" />
+                            <span asp-validation-for="DxDiadiemdon" class="text-danger"></span>
+                        </div>
+                        <div class="col-2">
+                        <input type="button" value="Search" class=" btn-primary rounded-2 border-0 p-2" id="geocode" placeholder="Enter the address" onclick="loadMapScenario()" />
+                        </div>
+                    </div>
+                    <div id="messsage"></div>
+                <div class="col-6"> <label for="latitude">Vĩ độ: </label><input asp-for="DxGpsLat" class="form-control" id="latitude" /></div>
+                <div class="col-6"><label for="longitude">Kinh độ: </label><input name="longitude" asp-for="DxGpsLon" class="form-control" id="longitude" /></div>
+                <input type="button" value="Gửi" class=" btn-outline-primary rounded-2 border-0 p-2 container my-3" id="send" />
+                </form>
+            </div>
+        <div class="col-6 mt-4">
+            <form method="post">
+                <div class="row">
+                    <div class="col-10">
+                        <input name="search" type="text" placeholder="Nhập thông tin cần tìm" class="form-control" />
+                    </div>
+                    <div class="col-2">
+                        <input type="button" value="Search" class=" btn-primary rounded-2 border-0 p-2"  />
+                    </div>
+                </div>
+            </form>
+            <div style="position: relative;
+            height: 400px;
+            overflow: auto;
+            display: block;" class="mt-4">
+                <table id="dt" class="table table-hover table-striped table-bordered table-sm container border-1 " cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.DxNgayGio)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.DxDiadiemdon)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.KhTen)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.KhPhone)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Lx)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var carHubContext = ViewData["carHubContext"] as IEnumerable<ServerService.Models.DatXe>;
+                            var carList = carHubContext != null ? carHubContext.ToList() : null;
+                            if (carList != null)
+                            {
+                                @foreach (var item in carList)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DxNgayGio)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.DxDiadiemdon)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.KhTen)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.KhPhone)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Lx.LxTen)
+                                        </td>
+                                        <td>
+                                            <a asp-action="Edit" asp-route-id="@item.DxId">Edit</a> |
+                                            <a asp-action="Details" asp-route-id="@item.DxId">Details</a> |
+                                            <a asp-action="Delete" asp-route-id="@item.DxId">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id='myMap' style='width: 100vw; height: 40vh;'></div>
+    <script src="/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="/js/datXe.js"></script>
+</body>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+

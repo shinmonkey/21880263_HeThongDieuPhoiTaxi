@@ -1,0 +1,61 @@
+﻿@model ServerService.Models.TaiXe
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TaiXe</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TxGiayPhepLaiXe)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TxGiayPhepLaiXe)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TxKhamSucKhoe)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TxKhamSucKhoe)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TxCccd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TxCccd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TxGpsLon)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TxGpsLon)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TxGpsLat)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TxGpsLat)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tt.TtId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tx)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tx.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.TxId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,182 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bing Maps</title>
+    <script type='text/javascript'>
+        function loadMapScenario() {
+            var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+                showSearchBar: true,
+                center: new Microsoft.Maps.Location(@ViewData["Latitude"], @ViewData["Longitude"]),
+                zoom: 15
+            });
+            var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), { color: 'red' });
+            map.entities.push(pushpin);
+            var address = document.getElementById("address").value;
+            var lat = document.getElementById("lat").value;
+            var lon = document.getElementById("lon").value;
+            Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
+                var searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                var requestOptions = {
+                    bounds: map.getBounds(),
+                    where: address,
+                    callback: function (answer, userData) {
+                        map.setView({ bounds: answer.results[0].bestView });
+                        map.entities.push(new Microsoft.Maps.Pushpin(answer.results[0].location));
+                        document.getElementById("lat").value = answer.results[0].location.latitude
+                        document.getElementById("lon").value = answer.results[0].location.longitude;
+                    }
+                };
+                searchManager.geocode(requestOptions);
+            });
+        }
+        </script>
+</head>
+<body>
+    <h1 class="text-center">Đặt Xe</h1>
+    <div class="row m-2">
+        <div class="col-6">
+            <form method="post">
+                <label class="control-label" for="fullname">Họ tên: </label>
+                <div><input type="text" class="form-control" name="fullname" /></div>
+                <label for="tel">Số điện thoại: </label>
+                <div><input type="tel" class="form-control" name="tel" pattern="[0-9]{10}" /></div>
+                <label for="fullname">Loại xe: </label>
+                <div><select class="form-control" name="kind">
+                    <option value="0">4 Chỗ</option>
+                    <option value="1">7 Chỗ</option>
+                    <option value="2">16 Chỗ</option>
+                </select></div>
+                <label for="address">Địa chỉ: </label>
+                <div class="row">
+                    <div class="col-10">
+                        <input name="address" type="text" id="address" class=" form-control" value="@ViewData["address"]" />
+                     </div>
+                     <div class="col-2">
+                        <input type="button" value="Search" class=" btn-primary rounded-2 border-0 p-2" id="geocode" placeholder="Enter the address" onclick="loadMapScenario()" />
+                    </div>
+                </div>
+                <div id="messsage" ></div>
+                <div class="col-6"> <label for="latitude">Vĩ độ: </label><input name="latitude" class="form-control" value="@ViewData["Latitude"]" id="lat" /></div>
+                <div class="col-6"><label for="longitude">Kinh độ: </label><input name="longitude" class="form-control" value="@ViewData["Longitude"]" id="lon" /></div>
+                <input type="submit" value="Gửi" class=" btn-outline-primary rounded-2 border-0 p-2 container my-3"/>
+            </form>
+        </div>
+        <div class="col-6 mt-4">
+            <form method="post">
+                <div class="row">
+                    <div class="col-10">
+                        <input name="search" type="text" placeholder="Nhập thông tin cần tìm" class="form-control" />
+                    </div>
+                    <div class="col-2">
+                        <input type="submit" value="Search" class=" btn-primary rounded-2 border-0 p-2" id="send" />
+                    </div>
+                </div>
+            </form>
+            <div style="position: relative;
+                height: 400px;
+                overflow: auto;
+                display: block;" class="mt-4">
+                <table id="dt" class="table table-hover table-striped table-bordered table-sm container border-1 " cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Mã đơn</th>
+                            <th>Họ tên khách hàng</th>
+                            <th>Số điện thoại</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ádsad</td>
+                            <td>sadasd</td>
+                            <td>ádasd</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>ádsad</td>
+                            <td>sadasd</td>
+                            <td>ádasd</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>ádsad</td>
+                            <td>sadasd</td>
+                            <td>ádasd</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>ádsad</td>
+                            <td>sadasd</td>
+                            <td>ádasd</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>ádsad</td>
+                            <td>sadasd</td>
+                            <td>ádasd</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id='myMap' style='width: 100vw; height: 40vh;'></div>
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Au-DVolT8rjOmJOlFmxYl4pLQTL00UgPwWHOAj53tq3cXLQS3mo2WS9XdI4pVly-&callback=loadMapScenario' async defer></script>
+        <script src="/lib/signalr/signalr.js"></script>
+        <script>
+            // Tạo đối tượng SignalR.HubConnection
+            // var connection = new HubConnection("http://localhost:5077/notificationHub");
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl("http://localhost:5077/notificationHub")
+                .configureLogging(signalR.LogLevel.Information)
+                .build();
+
+            async function start() {
+                try {
+                    await connection.start();
+                    console.log("SignalR Connected.");
+                } catch (err) {
+                    console.log(err);
+                    setTimeout(start, 5000);
+                }
+            };
+
+            connection.onclose(async () => {
+                await start();
+            });
+
+            // Start the connection.
+            start();
+
+            // Đăng ký nhận sự kiện MessageReceived
+            connection.On<boolean,string>("ReceiveOrder", (check, message) => {
+                // Xử lý sự kiện
+                console.log(message);
+                if (check) {
+                    alert("Đã nhận đơn");
+                } else {
+                    alert("Đơn gửi thất bại")
+                }
+            });
+        // Xử lý sự kiện click button
+            $("#send").addEventListener("click", function (event) {
+                event.preventdefault()
+                var order = {
+                    KhTen: $("#fullname").value,
+                    KhPhone: $("#tel").value,
+                    DxDiadiemdon: $("#address").value,
+                    DxGpsLat: $("#Latitude").value,
+                    DxGpsLon: $("#Longitude").value,
+                }
+                var message = JSON.stringify(order);
+            // Gửi tin nhắn đến SignalR Hub
+                connection.Invoke("SendOrder", message);
+        });
+    </script>
+    </div>
+</body>
+</html>

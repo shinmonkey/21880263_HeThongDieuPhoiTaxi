@@ -1,0 +1,96 @@
+﻿@model IEnumerable<ServerService.Models.DatXe>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DxNgayGio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DxDiadiemdon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DxGpsLon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DxGpsLat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KhTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KhPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lx)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ttdx)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tx)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Xe)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DxNgayGio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DxDiadiemdon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DxGpsLon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DxGpsLat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kh.KhId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lx.LxId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ttdx.TtdxId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tx.TxId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Xe.XeId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DxId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DxId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DxId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

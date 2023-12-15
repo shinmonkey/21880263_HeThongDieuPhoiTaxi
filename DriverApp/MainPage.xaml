@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             xmlns:sensors="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
+             xmlns:material="clr-namespace:MauiIcons.Material;assembly=MauiIcons.Material"
+             x:Class="DriverApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="Trạng thái"/>
+            <Picker x:Name="trangthai" SelectedIndex="1">
+                <Picker.Items>
+                    <x:String>Tạm nghỉ</x:String>
+                    <x:String>Sẵn sàng nhận cuốc</x:String>
+                </Picker.Items>
+            </Picker>
+            <VerticalStackLayout x:Name="orderLayout" IsVisible="false">
+                <Label Text="THÔNG TIN CUỐC XE" HorizontalOptions="Center" FontAttributes="Bold"/>
+                <Label Text="Địa chỉ"/>
+                <Label Text="" x:Name="txtaddress"/>
+                <maps:Map x:Name="map" HeightRequest="300" IsShowingUser="true"/>
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="30">
+                    <Button Text="Chấp nhận" x:Name="OKBtn" Clicked="OKBtn_Clicked" />
+                    <Button Text="Từ chối" x:Name="cancelBtn" Clicked="cancelBtn_Clicked" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
